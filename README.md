@@ -1,6 +1,7 @@
 ## 개발 관련 메모
 
 #### iOS 참고 자료   
+* Swift/iOS 자료 정리 : https://github.com/ClintJang/awesome-swift-korean-lecture
 * AppDelegate와 SceneDelegate : https://velog.io/@dev-lena/iOS-AppDelegate와-SceneDelegate
 
 #### 기타 참고 자료
