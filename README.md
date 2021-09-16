@@ -1,6 +1,6 @@
 # iOS 개발 관련 메모
 
-# 폰트 에러
+## 폰트 에러
 
 2021-09-16 09:21:29.049308+0900 TodosRe[75049:7155229] CoreText note: Client requested name ".AppleSDGothicNeoI-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[UIFont systemFontOfSize:].
 2021-09-16 09:21:29.049539+0900 TodosRe[75049:7155229] CoreText note: Set a breakpoint on CTFontLogSystemFontNameRequest to debug.
