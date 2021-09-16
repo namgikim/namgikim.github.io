@@ -1,4 +1,4 @@
-### 개발 관련 메모
+## 개발 관련 메모
 
 #### iOS 참고 자료   
 * AppDelegate와 SceneDelegate : https://velog.io/@dev-lena/iOS-AppDelegate와-SceneDelegate
