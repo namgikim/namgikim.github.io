@@ -22,3 +22,22 @@ A.
 TableViewController 의 viewDidAppear() 가 아닌 viewWillAppear() 에 작성하여 위와 같은 에러가 발생함.   
 동작에 문제는 없어보였지만, viewDidAppear() 로 수정하여 처리함.   
 
+***
+
+#### UIContextualAction 주의사항
+
+Q. handler의 success 메소드 내부에 해당 액션의 동작이 완료된 후에도 해당 row 의 Swipe 가 계속 활성화 되는 문제가 있음
+A. success(true) 와 같이 호출해줌으로써 완료를 의미하는 코드를 작성해야 함.
+```
+let deleteAction: UIContextualAction
+deleteAction = UIContextualAction(style: UIContextualAction.Style.destructive,
+                                  title: "delete",
+                                  handler: { (UIContextualAction, UIView, success: @escaping (Bool) -> Void) in
+                                    print("exec delete")
+                                    
+                                    success(true)
+                                  })
+deleteAction.backgroundColor = .systemRed
+deleteAction.image = UIImage(systemName: "trash.fill")
+```
+> Escaping Closure 관련 개념을 숙지해야 올바르게 이해가 가능할 것으로 보인다.
