@@ -52,7 +52,7 @@ Q. 두번째_컨트롤러 에서 첫번째_컨트롤러 의 TableView 를 reload
 
 A.   
 * 첫번째_컨트롤러에서 Notification 을 받아 reload를 하도록 처리하는 부분이 오류로 생각해서 viewWillAppear() 로 reload 코드를 옮겼다. (진작에 이렇게 하는게 맞는데 굳이 Notification 을 썼지..)   
-* 그러나 계속 같은 오류가 발생해서 DispatchQueue.main.async() 에서 처리하도록 변경했더니 경고 에러가 처리됐다.   
+* 그러나 계속 같은 오류가 발생해서 백그라운드에서 처리하기 위해 DispatchQueue.main.async() 에서 처리하도록 변경했더니 경고 에러가 처리됐다. (View 조작은 메인쓰레드에서!)
 * 대강 이유는 이미 View 가 다 그려졌는데 그 후에 View 를 변경하는 행위는 iOS에서 에러로 보려고 한다. 추후 문제가 발생할 소지가 있어보여 경고를 한 것이다.   
 참고: https://stackoverflow.com/questions/57897288/uitableviewalertforlayoutoutsideviewhierarchy-error-warning-once-only-ios-13-g
 
