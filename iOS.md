@@ -47,5 +47,5 @@ deleteAction.image = UIImage(systemName: "trash.fill")
 #### TableView reload 경고 에러
 
 Q. 두번째_컨트롤러 에서 첫번째_컨트롤러 의 TableView > reload 를 할 때 경고가 발생한다.   
-> 2021-09-26 15:34:55.578327+0900 
+> 2021-09-26 15:34:55.578327+0900   
 > Reminders[1991:9837716] [TableView] Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window. Table view: <UITableView: 0x7fdded035000; frame = (0 0; 414 896); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray: 0x60000043a820>; layer = <CALayer: 0x600000a38560>; contentOffset: {0, -92}; contentSize: {414, 131.5}; adjustedContentInset: {92, 0, 83, 0}; dataSource: <Reminders.ListTableViewController: 0x7fddee90ac30>>
