@@ -58,3 +58,13 @@ A.
 
 참고: https://stackoverflow.com/questions/57897288/uitableviewalertforlayoutoutsideviewhierarchy-error-warning-once-only-ios-13-g
 
+***
+
+#### Struct 파라미터 추가로 인해 파일을 못찾는 에러   
+
+Q. 에러 메세지
+> The data couldn’t be read because it is missing.
+
+A. 일단 앱을 제거하고 재실행한다. 해결방법 찾으면 다시 메모하자   
+
+***
