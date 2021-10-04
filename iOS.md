@@ -71,10 +71,10 @@ A. 일단 앱을 제거하고 재실행한다. 해결방법 찾으면 다시 메
 
 #### TableView Row 불일치 에러   
 
-Q. TableView의 Row를 삭제한 뒤, Cell에 표현하고있는 데이터를 수정했더니 아래와 같은 에러메시지가 발생한다.
+Q. TableView의 Row를 삭제한 뒤, 나중에 Cell에 표현하고있는 데이터를 수정했더니 아래와 같은 에러메시지가 발생한다.
 > Thread 1: "Invalid update: invalid number of rows in section 0. The number of rows contained in an existing section after the update (4) must be equal to the number of rows contained in that section before the update (4), plus or minus the number of rows inserted or deleted from that section (0 inserted, 1 deleted) and plus or minus the number of rows moved into or out of that section (0 moved in, 0 moved out)."
 
-A. 데이터를 먼저 수정하고나서 Row를 삭제해야 Delegate, DataSource 와의 불일치가 발생하지 않는다.
+A. 데이터를 먼저 수정하고나서 Row를 삭제해야 reload 과정에서 Delegate, DataSource 와의 불일치가 발생하지 않는다.
 
 ***
 
