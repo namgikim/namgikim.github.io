@@ -13,7 +13,7 @@ TextView 의 Text 속성에 글을 미리 작성했더니 위와 같이 에러�
 
 ***
 
-#### TableView.reloadSections(_:with:) 에러
+### TableView.reloadSections(_:with:) 에러
 
 Q. 에러 메시지
 > 2021-09-17 14:43:04.834539+0900 TodoSimple[76502:7349785] [TableView] Warning once only: UITableView was told to layout its visible cells and other contents without being in the view hierarchy (the table view or one of its superviews has not been added to a window). This may cause bugs by forcing views inside the table view to load and perform layout without accurate information (e.g. table view bounds, trait collection, layout margins, safe area insets, etc), and will also cause unnecessary performance overhead due to extra layout passes. Make a symbolic breakpoint at UITableViewAlertForLayoutOutsideViewHierarchy to catch this in the debugger and see what caused this to occur, so you can avoid this action altogether if possible, or defer it until the table view has been added to a window. Table view: <UITableView: 0x7f8607846600; frame = (0 0; 414 896); clipsToBounds = YES; autoresize = W+H; gestureRecognizers = <NSArray: 0x6000021e3090>; layer = <CALayer: 0x600002fc5ea0>; contentOffset: {0, -92}; contentSize: {414, 156}; adjustedContentInset: {92, 0, 34, 0}; dataSource: <TodoSimple.TodosTableViewController: 0x7f8606e13200>>
@@ -24,7 +24,7 @@ TableViewController 의 viewDidAppear() 가 아닌 viewWillAppear() 에 작성�
 
 ***
 
-#### UIContextualAction 주의사항
+### UIContextualAction 주의사항
 
 Q. handler의 success 메소드 내부에 해당 액션의 동작이 완료된 후에도 해당 row 의 Swipe 가 계속 활성화 되는 문제가 있음   
 A. success(true) 와 같이 호출해줌으로써 완료를 의미하는 코드를 작성해야 함.
@@ -44,7 +44,7 @@ deleteAction.image = UIImage(systemName: "trash.fill")
 
 ***
 
-#### TableView reload 경고 에러
+### TableView reload 경고 에러
 
 Q. 두번째_컨트롤러 에서 첫번째_컨트롤러 의 TableView 를 reload 를 할 때 경고가 발생한다.   
 > 2021-09-26 15:34:55.578327+0900   
@@ -60,7 +60,7 @@ A.
 
 ***
 
-#### Struct 파라미터 추가로 인해 파일을 못찾는 에러   
+### Struct 파라미터 추가로 인해 파일을 못찾는 에러   
 
 Q. 에러 메세지
 > The data couldn’t be read because it is missing.
@@ -69,7 +69,7 @@ A. 일단 앱을 제거하고 재실행한다. 해결방법 찾으면 다시 메
 
 ***
 
-#### TableView Row 불일치 에러   
+### TableView Row 불일치 에러   
 
 Q. TableView의 Row를 삭제한 뒤, 나중에 Cell에 표현하고있는 데이터를 수정했더니 아래와 같은 에러메시지가 발생한다.
 > Thread 1: "Invalid update: invalid number of rows in section 0. The number of rows contained in an existing section after the update (4) must be equal to the number of rows contained in that section before the update (4), plus or minus the number of rows inserted or deleted from that section (0 inserted, 1 deleted) and plus or minus the number of rows moved into or out of that section (0 moved in, 0 moved out)."
@@ -78,4 +78,4 @@ A. 데이터를 먼저 수정하고나서 Row를 삭제해야 reload 과정에�
 
 ***
 
-#### ...
+### ...
