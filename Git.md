@@ -1,6 +1,6 @@
 ## Git
 
-### Xcode 의 GitHub 연동에서 Push 시 에러
+### Xcode 의 GitHub 연동에서 Pull 시 에러
 
 Q. 팝업창 에러 메시지
 > The local repository is out of date.   
