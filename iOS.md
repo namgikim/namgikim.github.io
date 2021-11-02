@@ -78,4 +78,13 @@ A. 데이터를 먼저 수정하고나서 Row를 삭제해야 reload 과정에�
 
 ***
 
+### PHPickerViewController 로 가져온 이미지의 생성날짜, 위치정보를 가져오지 못하는 문제
+
+Q. PHPickerViewControllerDelegate 의 picker(_:didFinishPicking:) 에서 이미지의 생성날짜, 위치정보 등을 가져올 수 있는 assetIdentifier 값이 계속 nil을 반환했다.
+   
+A. PHPickerViewController 변수에 값을 할당할 때 configuration 매개변수에 PHPickerConfiguration() 생성자가 아닌 PHPickerConfiguration(photoLibrary:) 생성자를 사용해야한다.
+> var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
+
+***
+
 ### ...
